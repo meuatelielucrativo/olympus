@@ -92,6 +92,29 @@
   footer .note{margin-top:8px;font-size:.74rem;color:#5f553f}
   footer .credit{margin-top:8px;font-size:.72rem;color:#6f6346}
   footer .credit a{color:var(--gold)}
+  /* SECAO TOKEN / DAO */
+  .tokenblk{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 50% -10%,#1a1409 0%,#0c0a08 60%)}
+  .tokenblk::after{content:"";position:absolute;inset:0;background:
+    radial-gradient(60% 50% at 80% 20%,rgba(212,175,55,.10),transparent 70%),
+    radial-gradient(50% 40% at 15% 90%,rgba(212,175,55,.07),transparent 70%);pointer-events:none}
+  .tokenblk .wrap{position:relative;z-index:1}
+  .soon-badge{display:flex;width:max-content;align-items:center;gap:9px;margin:0 auto 18px;
+    border:1px solid rgba(212,175,55,.45);color:var(--gold);text-transform:uppercase;letter-spacing:.24em;
+    font-size:.64rem;font-weight:600;padding:8px 16px;border-radius:50px;background:rgba(212,175,55,.05)}
+  .soon-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--gold);animation:pulse 2.2s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(212,175,55,.5)}70%{box-shadow:0 0 0 9px rgba(212,175,55,0)}100%{box-shadow:0 0 0 0 rgba(212,175,55,0)}}
+  .tokengrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:18px;margin:40px auto 0;max-width:740px}
+  .tcard{position:relative;text-align:left;border:1px solid #2a2316;border-radius:16px;padding:30px 26px;
+    background:rgba(20,16,10,.55);overflow:hidden;transition:transform .4s,border-color .4s}
+  .tcard:hover{transform:translateY(-4px);border-color:rgba(212,175,55,.45)}
+  .tcard .soon{position:absolute;top:14px;right:14px;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;
+    color:#0c0a08;background:var(--gold);padding:4px 11px;border-radius:50px;font-weight:700}
+  .tcard .ico{width:46px;height:46px;border-radius:13px;border:1px solid rgba(212,175,55,.4);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .tcard h3{font-family:'Playfair Display',serif;font-size:1.45rem;margin-bottom:8px}
+  .tcard p{color:#b9ad95;font-size:.95rem;line-height:1.6}
+  .token-cta{margin-top:38px;text-align:center}
+  .token-note{margin:24px auto 0;max-width:64ch;font-size:.71rem;color:#6f6346;line-height:1.55;text-align:center}
   @media(max-width:760px){ section.blk{padding:64px 0} .card,.endcta{max-width:90vw} }
 </style>
 </head>
@@ -140,6 +163,33 @@
           <div class="scard reveal"><h3>Incorporação</h3><p>Empreendimentos do estudo de viabilidade à comercialização das unidades.</p></div>
           <div class="scard reveal"><h3>Construções financiadas</h3><p>Suporte na estruturação do financiamento, com segurança do início ao fim.</p></div>
         </div>
+      </div>
+    </section>
+
+    <section class="blk tokenblk" id="token">
+      <div class="wrap">
+        <div class="soon-badge"><span class="dot"></span>O futuro é agora</div>
+        <div class="eyebrow-c reveal">Olympus DAO</div>
+        <h2 class="h2c reveal">Ativos tokenizados.<br>O mundo construindo o Brasil.</h2>
+        <p class="subc reveal">A Olympus está abrindo as portas do setor para uma estrutura descentralizada. Construir o futuro deixa de ser privilégio de poucos — e passa a ser de quem faz parte da comunidade.</p>
+        <div class="tokengrid">
+          <div class="tcard reveal">
+            <span class="soon">Em breve</span>
+            <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 2l9 7-9 13L3 9z"/><path d="M3 9h18M12 2v20"/></svg></div>
+            <h3>Compra de tokens</h3>
+            <p>Garanta seu lugar na primeira rodada da comunidade Olympus. Acesso antecipado em breve.</p>
+          </div>
+          <div class="tcard reveal">
+            <span class="soon">Em breve</span>
+            <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5M3 17l9 5 9-5"/></svg></div>
+            <h3>Stake</h3>
+            <p>Mantenha seus tokens e participe ativamente da comunidade que está erguendo o futuro da construção.</p>
+          </div>
+        </div>
+        <div class="token-cta reveal">
+          <a class="btn-g" href="https://wa.me/5521979053195?text=Ol%C3%A1!%20Quero%20entrar%20na%20lista%20de%20espera%20da%20Olympus%20DAO%20(tokens%20e%20stake)." target="_blank" rel="noopener">Entrar na lista de espera</a>
+        </div>
+        <p class="token-note reveal">Pré-lançamento informativo. Esta página não constitui oferta pública, captação de recursos, promessa de rendimento ou distribuição de resultados. Qualquer emissão futura observará a regulamentação aplicável.</p>
       </div>
     </section>
 
